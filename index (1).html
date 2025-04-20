@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvtoZap - Avtomobil ehtiyot qismlari</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .card-content {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">AvtoZap</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-300">Bosh sahifa</a></li>
+                    <li><a href="#products" class="hover:text-blue-300">Mahsulotlar</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300">Bog'lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-96 flex items-center justify-center text-white">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Avtomobilingiz uchun eng yaxshi ehtiyot qismlar</h2>
+            <p class="text-lg mb-6">Sifatli va ishonchli mahsulotlar bilan yo'llarda xavfsiz bo'ling!</p>
+            <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded">Mahsulotlarni ko'rish</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Bizning mahsulotlar</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="shina.jpg" alt="Shina" class="product-img">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold">Avtomobil shinasi</h3>
+                        <p class="text-gray-600">Yuqori sifatli shinasi har xil avtomobillar uchun.</p>
+                        <a href="https://www.zoodmall.uz/category/4797/shinalar/" target="_blank" class="block mt-4 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="akumlayotor.jpg" alt="Akkumulyator" class="product-img">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold">Akkumulyator</h3>
+                        <p class="text-gray-600">Uzoq muddat xizmat qiladigan akkumulyatorlar.</p>
+                        <a href="https://olcha.uz/oz/manufacturer/delkor/akkumulyatory?srsltid=AfmBOoqM0tV3ti6eMLWA47OqInKdZEWnDlKrwXAuS3mA2zvfuEptP1CI" target="_blank" class="block mt-4 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="moy filtiri.jpg" alt="Moy filtri" class="product-img">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold">Moy filtri</h3>
+                        <p class="text-gray-600">Dvigatelni himoya qilish uchun sifatli filtrlar.</p>
+                        <a href="https://uzum.uz/uz/category/moy-filtrlari-16634?srsltid=AfmBOoofOmqNGGyfKBPRSP4meQLQSwZUHdrvQiIqjEnf-dNC21YJDDCY" target="_blank" class="block mt-4 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="tormoz tizimi.jpg" alt="Tormoz diski" class="product-img">
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold">Tormoz diski</h3>
+                        <p class="text-gray-600">Xavfsiz tormozlash uchun mustahkam disklarni tanlang.</p>
+                        <a href="https://uzum.uz/uz/category/tormoz-disklari-16612?srsltid=AfmBOoqnX8sXC1PPS0aDPcrZj7XuRCDRQ5oDv2ONUatLWSv9YvzH8Y24" target="_blank" class="block mt-4 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Biz bilan bog'laning</h2>
+            <p class="text-lg mb-6">Savollaringiz bo'lsa yoki buyurtma berishni xohlasangiz, biz bilan bog'laning!</p>
+            <p class="text-lg">Telefon: <a href="tel:+998901234567" class="hover:text-blue-300">+998 94 880 01 11</a></p>
+            <p class="text-lg">Email: <a href="mailto:info@avtozap.uz" class="hover:text-blue-300">Mirqosim@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4 text-center">
+        <p>© 2025 AvtoZap. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+    </script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
